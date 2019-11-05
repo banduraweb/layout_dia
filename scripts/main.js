@@ -8,7 +8,7 @@
   const id = setInterval(function() {
     step = step === 4 ? 1 : step = step + 1;
     sliderContainer.style.cssText
-      = `background: url("../images/slider/slide-img-${step}.jpg");`;
+      = `background: url("images/slider/slide-img-${step}.jpg");`;
   }, 3000);
 
   buttonNext.onclick = function() {
