@@ -4,7 +4,7 @@
   const id = setInterval(function () {
     step = step === 4 ? 1 : step = step + 1;
     sliderContainer.style.cssText
-      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`;
+      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`; // eslint-disable-line no-use-before-define
   }, 3000);
 
   const buttonPrev = document.getElementById('next');
@@ -17,13 +17,13 @@
     clearInterval(id);
     step = step === 4 ? 1 : step = step + 1;
     sliderContainer.style.cssText
-      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`;
+      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`; // eslint-disable-line no-use-before-define
   };
 
   buttonPrev.onclick = function () {
     clearInterval(id);
     step = step === 1 ? step = 4 : step = step - 1;
     sliderContainer.style.cssText
-      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`;
+      = `background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-${step}.jpg");`; // eslint-disable-line no-use-before-define
   };
 })();
