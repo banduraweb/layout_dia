@@ -1,4 +1,5 @@
 'use strict';
+
 (() => {
   const buttonPrev = document.getElementById('next');
   const buttonNext = document.getElementById('prev');
