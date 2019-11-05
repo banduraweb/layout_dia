@@ -22,16 +22,14 @@ textarea {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   line-height: inherit;
-  border-width: 0; }
+  border-width: 0;
+  outline: none; }
 
 a {
   text-decoration: none; }
 
 li {
   list-style: none; }
-
-.fas {
-  font-size: 50px; }
 
 .header {
   margin: 0 auto;
@@ -79,8 +77,8 @@ li {
     height: 640px;
     width: 1146px;
     margin-top: 80px;
-    -webkit-transition: background 2s ease;
-    transition: background 2s ease; }
+    -webkit-transition: background 1500ms ease;
+    transition: background 1500ms ease; }
 
 .nav__list {
   display: -webkit-box;
@@ -207,5 +205,11 @@ li {
   position: absolute;
   top: 500px;
   left: 98px; }
+
+.fas {
+  font-size: 50px;
+  cursor: pointer; }
+  .fas:hover {
+    color: #2f80ed; }
 
 /*# sourceMappingURL=main.css.map */
