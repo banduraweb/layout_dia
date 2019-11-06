@@ -72,11 +72,8 @@ li {
       background-color: #2f80ed;
       color: #fff; }
   .header__slider {
-    background: url("https://banduraweb.github.io/layout_dia/images/slider/slide-img-1.jpg");
-    background-position: center;
     background-size: cover;
     height: 640px;
-    width: 1146px;
     margin-top: 80px;
     -webkit-transition: background 1500ms ease;
     transition: background 1500ms ease; }
@@ -206,6 +203,26 @@ li {
   position: absolute;
   top: 500px;
   left: 98px; }
+
+.slider__img {
+  height: 640px;
+  width: 1146px; }
+
+.slider__container {
+  width: 1146px;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: left 2s ease;
+  transition: left 2s ease; }
 
 .fas {
   font-size: 50px;
