@@ -15,8 +15,10 @@ h4,
 h5,
 h6,
 p,
+form,
 input,
 button,
+fieldset,
 textarea {
   margin: 0;
   padding: 0;
@@ -99,6 +101,8 @@ li {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%; }
+  .nav__link--dark {
+    color: #253757; }
   .nav__link--slider-link {
     font-weight: 800;
     font-size: 13px;
@@ -153,6 +157,15 @@ li {
   letter-spacing: 1px;
   color: #253757;
   cursor: pointer; }
+  .button--blue {
+    background: #2f80ed;
+    color: #fff;
+    -webkit-transition: background 1s ease;
+    transition: background 1s ease; }
+    .button--blue:hover {
+      border: 2px #2f80ed solid;
+      background: #fff;
+      color: #2f80ed; }
 
 .slider__button {
   width: 81px;
@@ -262,8 +275,10 @@ li {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .section__img--white {
+      /* stylelint-disable */
       background: -webkit-gradient(linear, left top, left bottom, color-stop(28.57%, white), color-stop(42.86%, white));
-      background: linear-gradient(180deg, white 28.57%, white 42.86%); }
+      background: linear-gradient(180deg, white 28.57%, white 42.86%);
+      /* stylelint-enable */ }
   .section__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -335,8 +350,6 @@ li {
     color: #253757;
     margin-top: 19px; }
   .section__info {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     color: #334563;
@@ -345,6 +358,10 @@ li {
     margin-top: 64px; }
   .section__features {
     margin-top: -232px; }
+  .section__form {
+    margin-top: 128px; }
+  .section__footer {
+    margin: 136px 0 83px; }
 
 .card {
   display: -webkit-box;
@@ -479,7 +496,7 @@ li {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #fff;
   mix-blend-mode: normal;
   margin-left: 32px; }
 
@@ -510,8 +527,10 @@ li {
     background-size: cover;
     z-index: 10; }
   .testimonials-card__behind {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56CCF2;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+    /* stylelint-disable */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /* stylelint-enable */
     border-radius: 500px;
     width: 164px;
     height: 64px;
@@ -522,11 +541,15 @@ li {
     left: 85px;
     top: 87px; }
     .testimonials-card__behind--yellow {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #FCC304;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304; }
+      /* stylelint-disable */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+      /* stylelint-enable */ }
     .testimonials-card__behind--red {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #F25656;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #F25656; }
+      /* stylelint-disable */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+      /* stylelint-enable */ }
   .testimonials-card__content {
     font-style: italic;
     font-weight: normal;
@@ -539,18 +562,24 @@ li {
   .testimonials-card__line {
     width: 64px;
     height: 2px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56CCF2;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+    /* stylelint-disable */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /* stylelint-enable */
     border-radius: 500px;
     -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
             transform: matrix(1, 0, 0, -1, 0, 0);
     margin-top: 31px; }
     .testimonials-card__line--yellow {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #FCC304;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304; }
+      /* stylelint-disable */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+      /* stylelint-enable */ }
     .testimonials-card__line--red {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #F25656;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #F25656; }
+      /* stylelint-disable */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+      /* stylelint-enable */ }
   .testimonials-card__name {
     font-weight: bold;
     font-size: 13px;
@@ -565,11 +594,11 @@ li {
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #56CCF2; }
+    color: #56ccf2; }
     .testimonials-card__position--yellow {
-      color: #FCC304; }
+      color: #fcc304; }
     .testimonials-card__position--red {
-      color: #F25656; }
+      color: #f25656; }
 
 .testimonials-cards__container {
   margin-top: 86px;
@@ -579,5 +608,121 @@ li {
   .testimonials-cards__container > :nth-child(2),
   .testimonials-cards__container > :nth-child(3) {
     margin-left: 78px; }
+
+.result {
+  padding: 0 67px;
+  height: 608px;
+  background: url("../images/result/vps-bg-1.svg") no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .result__head {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #253757; }
+  .result__content {
+    margin-top: 57px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #334563;
+    margin-bottom: 55px; }
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 97px;
+  padding: 0 227px; }
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.contact__action {
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #334563;
+  margin-top: 43px; }
+
+.contact__info {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #56ccf2; }
+
+.contact__list {
+  width: 375px; }
+
+.contact__network {
+  margin-top: 53px; }
+  .contact__network img:nth-child(2),
+  .contact__network :nth-child(3) {
+    margin-left: 48px; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .form__button {
+    margin-top: 105px; }
+
+.input {
+  border-bottom: 1px solid  #e1e1e1;
+  font-weight: bold;
+  font-size: 14.4px;
+  line-height: 150%;
+  color: #152032;
+  width: 500px;
+  height: 40px;
+  background: #fcfcfd;
+  padding-top: 10px; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 227px; }
 
 /*# sourceMappingURL=main.css.map */
