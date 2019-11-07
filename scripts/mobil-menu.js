@@ -5,7 +5,7 @@ function onReady() {
   const buttonOpen = document.getElementById('mobile__btn--open');
   const buttonClose = document.getElementById('mobile__btn--close');
   const navMenu = document.getElementById('nav__list');
-  console.log(buttonClose);
+
 
   buttonOpen.onclick = function() {
     navMenu.style.cssText = 'display: flex;';

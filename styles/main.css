@@ -111,14 +111,13 @@ li {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.mobile__btn {
+#mobile__btn--open {
+  display: none;
   color: #fff; }
 
-#mobile__btn--open {
-  display: none; }
-
 #mobile__btn--close {
-  display: none; }
+  display: none;
+  color: #fff; }
 
 @media screen and (max-width: 1180px) {
   #mobile__btn--open {
