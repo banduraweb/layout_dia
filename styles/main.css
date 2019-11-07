@@ -318,10 +318,6 @@ li {
   -webkit-transition: left 2s ease;
   transition: left 2s ease; }
 
-@media (min-width: 320px) and (max-width: 1180px) {
-  .slider__wrapper {
-    display: none; } }
-
 @media (min-width: 1181px) and (max-width: 1300px) {
   .slider__button--left {
     top: 576px;
