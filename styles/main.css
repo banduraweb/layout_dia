@@ -111,6 +111,19 @@ li {
           -ms-flex-pack: center;
               justify-content: center; } }
 
+.mobile__btn {
+  color: #fff; }
+
+#mobile__btn--open {
+  display: none; }
+
+#mobile__btn--close {
+  display: none; }
+
+@media screen and (max-width: 1180px) {
+  #mobile__btn--open {
+    display: block; } }
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +186,8 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; } }
+    width: 100%;
+    display: none; } }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
   .nav__link--slider-link {

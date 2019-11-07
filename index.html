@@ -11,12 +11,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+
 </head>
 <body>
 <header class="header">
   <div class="header__top">
-    <img class="logo header__logo" src="images/logo/dia-logo.svg" alt="">
-    <ul class="nav nav__list">
+    <img class="logo header__logo" src="images/logo/dia-logo.svg" alt="logo">
+    <div class="fas fa-bars mobile__btn" id="mobile__btn--open"></div>
+    <div class="fas fa-window-close mobile__btn" id="mobile__btn--close"></div>
+    <ul class="nav nav__list" id="nav__list">
       <li><a href="#" class="nav__link nav__link--is-active">Home</a></li>
       <li><a href="#" class="nav__link nav__link--is-active">About us</a></li>
       <li><a href="#" class="nav__link nav__link--is-active">Services</a></li>
@@ -407,6 +410,7 @@
     <li><a href="#" class="nav__link nav__link--dark">Contact Us</a></li>
   </ul>
 </footer>
+<script src="scripts/mobil-menu.js"></script>
 <script src="scripts/main1.js"></script>
 </body>
 </html>
