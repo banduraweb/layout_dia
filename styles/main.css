@@ -336,7 +336,13 @@ li {
   .slider__button {
     display: none; }
   .slider__description {
-    font-size: 14px; } }
+    font-size: 8px; }
+  .slider__title {
+    font-size: 8px; }
+  .fa-angle-double-right {
+    position: absolute;
+    top: 50%;
+    color: red; } }
 
 .fas {
   font-size: 50px;
