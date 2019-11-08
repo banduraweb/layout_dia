@@ -75,11 +75,12 @@ li {
       color: #fff; }
   .header__slider {
     background-size: cover;
+    height: 640px;
     margin-top: 80px;
     -webkit-transition: background 1500ms ease;
     transition: background 1500ms ease; }
 
-@media (min-width: 320px) and (max-width: 1180px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -162,6 +163,23 @@ li {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #253757; }
+  .nav__link--action {
+    position: relative;
+    padding-right: 98px; }
+    .nav__link--action::after {
+      display: block;
+      content: "";
+      height: 4px;
+      border-radius: 32px;
+      width: 54px;
+      position: absolute;
+      bottom: -5px;
+      /* stylelint-disable */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+      /* stylelint-enable */
+      -webkit-transition: width 0.3s;
+      transition: width 0.3s; }
   .nav__link--is-active {
     position: relative; }
     .nav__link--is-active::after {
@@ -298,9 +316,11 @@ li {
   left: 98px; }
 
 .slider__img {
-  cursor: pointer; }
+  height: 640px;
+  width: 1146px; }
 
 .slider__container {
+  width: 1146px;
   height: 100%;
   position: relative;
   overflow: hidden; }
@@ -314,6 +334,12 @@ li {
   overflow: hidden;
   -webkit-transition: left 2s ease;
   transition: left 2s ease; }
+
+@media (min-width: 320px) and (max-width: 1180px) {
+  .slider__img {
+    height: 168px; }
+  .slider__inner {
+    overflow: hidden; } }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
   .slider__button--left {
@@ -671,7 +697,7 @@ li {
   z-index: 10; }
   .features__container {
     padding-top: 227px;
-    padding-left: 227px; }
+    padding-left: 125px; }
   .features__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,7 +729,7 @@ li {
     font-size: 10px; } }
 
 .testimonials__container {
-  padding-left: 227px;
+  padding-left: 125px;
   padding-top: 227px; }
 
 .testimonials-card {
