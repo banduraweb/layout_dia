@@ -338,11 +338,7 @@ li {
   .slider__description {
     font-size: 8px; }
   .slider__title {
-    font-size: 8px; }
-  .fa-angle-double-right {
-    position: absolute;
-    top: 50%;
-    color: red; } }
+    font-size: 8px; } }
 
 .fas {
   font-size: 50px;
