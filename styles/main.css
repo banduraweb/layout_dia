@@ -336,8 +336,6 @@ li {
 @media (min-width: 320px) and (max-width: 1180px) {
   .slider__img {
     height: 168px; }
-  .slider__wrapper {
-    display: none; }
   .slider__inner {
     overflow: hidden; } }
 
