@@ -23,12 +23,12 @@ function onReady() {
     }
   }
 
-  buttonOpen.onmousedown = () => {
+  buttonOpen.onmousedown = function () {
     navMenu.style.cssText = "display: flex;";
     buttonOpen.style.cssText = "display: none;";
     buttonClose.style.cssText = "display: block;";
   };
-  buttonClose.onmousedown = () => {
+  buttonClose.onmousedown = function () {
     navMenu.style.cssText = "display: none;";
     buttonClose.style.cssText = "display: none;";
     buttonOpen.style.cssText = "display: flex;";
