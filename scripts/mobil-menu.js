@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", onReady);
 
 function onReady() {
-  console.log(currentWidth());
+
   const buttonOpen = document.getElementById("mobile__btn--open");
   const buttonClose = document.getElementById("mobile__btn--close");
   const navMenu = document.getElementsByClassName("nav__list")[0];
@@ -12,7 +12,7 @@ function onReady() {
 
   function showHideMobBtn() {
 
-    if (document.body.clientWidth > 1181) {
+    if (currentWidth() > 1181) {
       navMenu.style.cssText = "display: flex;";
       buttonOpen.style.cssText = "display: none;";
       buttonClose.style.cssText = "display: none;";
@@ -23,12 +23,12 @@ function onReady() {
     }
   }
 
-  buttonOpen.onclick = () => {
+  buttonOpen.onmousedown = () => {
     navMenu.style.cssText = "display: flex;";
     buttonOpen.style.cssText = "display: none;";
     buttonClose.style.cssText = "display: block;";
   };
-  buttonClose.onclick = () => {
+  buttonClose.onmousedown = () => {
     navMenu.style.cssText = "display: none;";
     buttonClose.style.cssText = "display: none;";
     buttonOpen.style.cssText = "display: flex;";

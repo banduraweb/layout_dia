@@ -1,6 +1,5 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", onReady);
-function onReady() {
+
   const sliderInner = document.querySelector(".slider__inner");
   const buttonPrev = document.getElementById("next");
   const buttonNext = document.getElementById("prev");
@@ -46,6 +45,6 @@ function onReady() {
       step === 0 ? (step = -(maxWidth - imgWidth)) : (step = step + imgWidth);
     sliderInner.style.cssText = `left:${step}%`;
   }
-}
+
 
 
