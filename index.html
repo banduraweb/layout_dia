@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,600i,700,800,900&display=swap"
         rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/mobil-menu.js"></script>
 
 </head>
 <body>
 <header class="header">
   <div class="header__top">
     <img class="logo header__logo" src="images/logo/dia-logo.svg" alt="logo">
-    <div class="fas fa-bars mobile__btn" id="mobile__btn--open" style="color: white"></div>
-    <div class="fas fa-window-close mobile__btn" id="mobile__btn--close" style="display: none" ></div>
-    <ul class="nav nav__list" id="nav__list">
+    <div class="mobile-btn__wrapper">
+    <div class="fas fa-bars mobile__btn" id="mobile__btn--open" ></div>
+    <div class="fas fa-window-close mobile__btn" id="mobile__btn--close"  ></div>
+    </div>
+    <ul class="nav nav__list">
       <li><a href="#" class="nav__link nav__link--is-active">Home</a></li>
       <li><a href="#" class="nav__link nav__link--is-active">About us</a></li>
       <li><a href="#" class="nav__link nav__link--is-active">Services</a></li>
@@ -36,7 +40,6 @@
     <div class="slider__wrapper">
       <div class="slider header__slider">
         <div class="slider__container" id="test">
-          <span class="fas fa-angle-double-right"></span>
           <div class="slider__inner">
             <img class="slider__img"  src="images/slider/slide-img-1.jpg" alt="slider photo"/>
             <img class="slider__img" src="images/slider/slide-img-2.jpg" alt="slider photo"/>
@@ -411,8 +414,6 @@
     <li><a href="#" class="nav__link nav__link--dark">Contact Us</a></li>
   </ul>
 </footer>
-
-<script src="scripts/mobil-menu.js"></script>
-<script src="scripts/main1.js"></script>
+<!--<script src="scripts/lib/modules/main.js" type="module"></script>-->
 </body>
 </html>
