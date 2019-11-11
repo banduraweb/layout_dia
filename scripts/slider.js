@@ -5,6 +5,8 @@
   const buttonNext = document.getElementById("prev");
   const images = document.querySelectorAll(".slider__img");
   const imagesContainer = document.querySelector(".slider__container");
+
+
   let step = 0;
   const imgWidth = 100; // %
   const maxWidth = imgWidth * 4; // %
@@ -19,11 +21,12 @@
     return document.body.clientWidth;
   }
 
+
   function resizing() {
     setSize(currentWidth);
   }
 
-  function setSize(callback) {
+function setSize(callback) {
     let width = callback();
     images.forEach(
       item =>
