@@ -355,6 +355,15 @@ li {
     width: 10%;
     height: 15%; } }
 
+.fas {
+  cursor: pointer; }
+  .fas:hover {
+    color: #2f80ed; }
+
+@media screen and (min-width: 1300px) {
+  .fas {
+    font-size: 50px; } }
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
