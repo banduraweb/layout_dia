@@ -13,7 +13,7 @@
 
   setSize(currentWidth);
   buttonNext.onclick = nextClick;
-  imagesContainer.onmousemove = nextClick;
+  // imagesContainer.onmousemove = nextClick;
   buttonPrev.onclick = prevClick;
   document.body.onresize = resizing;
 
